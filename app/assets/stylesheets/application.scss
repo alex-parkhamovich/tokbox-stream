@@ -1,0 +1,13 @@
+@import "devise_bootstrap_views";
+@import "bootstrap";
+
+.full-height {
+  height: 100%;
+}
+
+html, body {
+  @extend .full-height;
+}
+body {
+  padding-top: 5rem;
+}

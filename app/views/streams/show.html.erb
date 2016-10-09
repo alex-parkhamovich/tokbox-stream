@@ -1,0 +1,26 @@
+<%= javascript_include_tag "//static.opentok.com/webrtc/v2.2/js/TB.min.js" %>
+<%= Gon::Base.render_data %>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <%= stream.title %> |
+        <span> Viewers: <span id="viewers">0</span></span>
+      </div>
+      <div class="card-block">
+        <div class="card-text">
+          <%= stream.desc %>
+        </div>
+      </div>
+      <div class="card-block">
+        <div id="streamer_video">
+          <div id="publisher"></div>
+
+          <div id="subscribers"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

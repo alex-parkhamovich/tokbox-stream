@@ -1,0 +1,21 @@
+<div class="col-sm-4">
+  <div class="card">
+    <div class="card-header">
+      New stream options
+    </div>
+    <div class="card-block">
+      <%= form_for stream do |f| %>
+          <fieldset class="form-group">
+            <%= f.label :title %>
+            <%= f.text_field :title %>
+          </fieldset>
+          <fieldset class="form-group">
+            <%= f.label :desc, 'Description' %>
+            <%= f.text_field :desc %>
+          </fieldset>
+
+          <%= f.submit "Start streaming!", class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>

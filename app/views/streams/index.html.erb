@@ -1,0 +1,12 @@
+<div class="row">
+  <%= render streams %>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <% if current_user && current_user.stream %>
+        <%= link_to "Go to my stream", current_user.stream, class: 'btn btn-info btn-large center-block' %>
+    <% else %>
+        <%= link_to "Start new stream", new_stream_path, class: 'btn btn-danger btn-large center-block' %>
+    <% end %>
+  </div>
+</div>
