@@ -8,6 +8,6 @@ Things you may want to cover:
 
 * Rails 5
 
-* PostgreSql
+* PostgreSQL
 
 
